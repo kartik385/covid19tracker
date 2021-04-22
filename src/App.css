@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  margin: 0%;
+  font-family: "Lobster", cursive;
+}
+.app_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+body {
+  background: #3494e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ec6ead,
+    #3494e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ec6ead,
+    #3494e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.app_stats {
+  display: flex;
+  justify-content: space-between;
+}
+.app_left {
+  flex: 0.9;
+}
+.app_right {
+  background: #c2e59c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #64b3f4,
+    #c2e59c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #64b3f4,
+    #c2e59c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.app_header > h1 {
+  font-weight: bolder;
+  text-shadow: 2px 2px yellow;
+  color: red;
+  font-size: 2rem;
+}
+.app__dropdown {
+  background: #4da0b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #d39d38,
+    #4da0b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #d39d38,
+    #4da0b0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+  .app_stats {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .infoBox:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .app_right {
+    margin-top: 20px;
+  }
+}

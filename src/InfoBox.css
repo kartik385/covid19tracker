@@ -1,0 +1,42 @@
+.infoBox {
+  flex: 1;
+  width: 170px;
+  cursor: pointer;
+  transition: 0.5s;
+  background: #d3cce3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e9e4f0,
+    #d3cce3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e9e4f0,
+    #d3cce3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.infoBox:not(:last-child) {
+  margin-right: 10px;
+}
+.infoBox:hover {
+  box-shadow: 0px 7px yellow !important;
+}
+
+.recovered:hover {
+  box-shadow: 0px 7px green !important;
+}
+
+.deaths:hover {
+  box-shadow: 0px 7px red !important;
+}
+.infoBox_cases {
+  color: red;
+  text-shadow: 2px 2px aqua !important;
+}
+.infoBox_title {
+  font-size: large !important;
+  font-weight: bolder !important;
+}
+.infoBox:active {
+  border-top: 10px solid crimson !important;
+}
